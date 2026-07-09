@@ -1,4 +1,15 @@
 <!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Pizzaria Meirelles Painel </title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -179,6 +190,7 @@
   <div class="flag-rule small" aria-hidden="true"></div>
   <p>Tradição de família · Forno a gás · Toda massa artesanal</p>
   <a href="https://www.instagram.com/pizzaria_meirelles_" target="_blank" rel="noopener">@pizzaria_meirelles_</a>
+  <p class="footer-admin"><a href="painel.html">painel interno</a></p>
 </footer>
 
 <div class="cart-overlay" id="cartOverlay"></div>
@@ -208,4 +220,54 @@
 
 <script src="script.js"></script>
 </body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Painel · Pizzaria Meirelles</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&family=Manrope:wght@400;500;700;800&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="painel.css">
+</head>
+<body class="painel-body">
+
+<div class="painel-wrap">
+  <header class="painel-head">
+    <div class="nav-mark">Meirelles</div>
+    <h1>Painel de impressão</h1>
+    <p class="painel-sub">Cole aqui o pedido que chegou no WhatsApp e imprima o cupom na impressora de 58mm.</p>
+  </header>
+
+  <section class="painel-card">
+    <label class="painel-label" for="clienteNome">Nome do cliente <span class="opt">(opcional)</span></label>
+    <input type="text" id="clienteNome" class="painel-input" placeholder="Ex: Iorran">
+
+    <label class="painel-label" for="pedidoTexto">Pedido</label>
+    <textarea id="pedidoTexto" class="painel-textarea" rows="10" placeholder="Cole aqui a mensagem do pedido, ex:&#10;&#10;2x Calabresa (G) — R$90&#10;1x Coca-Cola 2 litros — R$18&#10;&#10;Total: R$108"></textarea>
+
+    <div class="painel-status" id="printerStatus">
+      <span class="status-dot" id="statusDot"></span>
+      <span id="statusText">Impressora não conectada</span>
+    </div>
+
+    <div class="painel-actions">
+      <button class="ember-btn" id="connectBtn">Conectar impressora</button>
+      <button class="ember-btn large" id="printBtn" disabled>Imprimir cupom</button>
+    </div>
+
+    <p class="painel-hint">Se a impressora não aparecer ou não conectar, me manda a marca/modelo dela que eu ajusto o painel.</p>
+  </section>
+</div>
+
+<script src="painel.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
 </html>
